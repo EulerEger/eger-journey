@@ -30,7 +30,7 @@ I regularly work with:
     - **Chemical process** DWSIM, COCO
     - **Fluid mechnics** OpenFOAM
     - **Monte Carlo** OpenMC 
-    - **Utilitary-Numerical** MATLAB/Octave     
+    - **Utilitary-Numerical** MATLAB/Octave, OpenModelica     
 
 ---
 
