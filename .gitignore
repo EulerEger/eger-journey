@@ -3,10 +3,30 @@
 /resources/
 /node_modules/
 /draft/
+/reviso/
+
 # OS files
 .DS_Store
 *.log
+Thumbs.db
 
-public/
 .hugo_build.lock
-.vscode
+
+# Hugo backups and temporary files
+*.bak
+*.tmp
+*.swp
+*~
+
+# Docker logs
+*.log
+
+
+# Editors / IDEs
+.vscode/
+.idea/
+
+# Environment files / secrets
+.env
+.env.*
+!.env.example
