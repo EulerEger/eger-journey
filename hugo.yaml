@@ -175,4 +175,5 @@ minify:
   disableHTML: false
   disableCSS: false
   disableJS: false
+  disableXML: true
   minifyOutput: true
