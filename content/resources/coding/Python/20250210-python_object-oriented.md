@@ -1,7 +1,7 @@
 ---
-title: 'Object Oriented'
+title: 'Object-Oriented'
 date: '2026-02-10'
-draft: true
+draft: false
 categories: ["Coding", "Python"]
 category_weight: 60
 weight: 60
@@ -13,29 +13,19 @@ Python is an object-oriented programming (OOP) language, which means it is desig
 
 In Python, objects are created using classes, which act as blueprints for the objects. OOP allows for modular, reusable, and maintainable code by organizing related data and behavior into classes.
 
-
-
 Classes and Objects
 
 What is a Class?
 
 A class is a blueprint for creating objects. It defines:
 
-
-
-
-
 Attributes: Variables that store data.
-
-
 
 Methods: Functions that perform operations on the data.
 
 What is an Object?
 
 An object is an instance of a class. When you create an object, you are creating a specific instance of the class with its own data.
-
-
 
 Defining a Class
 
@@ -59,17 +49,9 @@ class Particle:
 
 Explanation
 
-
-
-
-
 **__init__**: A special method called the constructor. It is automatically called when an object is created.
 
-
-
 **self**: Refers to the instance of the class. It allows you to access the attributes and methods of the class.
-
-
 
 Creating Objects
 
@@ -84,8 +66,6 @@ p2 = Particle(1, 0, 1, 1, 0, 0, 3)
 print(p1.x, p2.x)  # Output: 3 1
 {{< /highlight >}}
 
-
-
 Methods
 
 Methods are functions defined inside a class that perform operations on the object’s data. They can access and modify the object’s attributes using self.
@@ -94,13 +74,7 @@ Example: Adding Methods to Particle
 
 Let’s add two methods to the Particle class:
 
-
-
-
-
 **move(t)**: Updates the particle’s position based on its velocity and time t.
-
-
 
 **get_distance()**: Calculates the distance from the origin.
 
@@ -133,8 +107,6 @@ print(p.x, p.y, p.z)  # Output: 5 0 1
 print(p.get_distance())  # Output: 5.0990195135927845
 {{< /highlight >}}
 
-
-
 Inheritance
 
 Inheritance allows a child class to inherit attributes and methods from a parent class. This promotes code reusability and hierarchical organization.
@@ -160,17 +132,9 @@ print(p.x)  # Output: 2
 
 Explanation
 
-
-
-
-
 **super().__init__(...)**: Calls the parent class’s __init__ method to initialize inherited attributes.
 
-
-
 **Proton** inherits all attributes and methods from Particle and adds its own (q).
-
-
 
 Overriding Methods
 
@@ -213,8 +177,6 @@ p.move(t=2, Ex=4e-12, Ey=3e-12, Ez=6e-12)
 print(p.get_position())  # Output: [13.78155873, 8.16684962, 14.17233809]
 {{< /highlight >}}
 
-
-
 Polymorphism
 
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables flexibility and dynamic method resolution.
@@ -238,8 +200,6 @@ proton.move(1, Ex=1e-12, Ey=0, Ez=0)
 print("Particle position:", particle.x, particle.y, particle.z)
 print("Proton position:", proton.x, proton.y, proton.z)
 {{< /highlight >}}
-
-
 
 Encapsulation
 
@@ -271,8 +231,6 @@ print(account.__balance)  # Error: AttributeError
 
 {{< /highlight >}}
 
-
-
 Class Methods and Static Methods
 
 Class Methods
@@ -300,8 +258,6 @@ p2 = Particle(4, 5, 6)
 print(Particle.get_count())  # Output: 2
 {{< /highlight >}}
 
-
-
 Static Methods
 
 A static method is a method that belongs to the class rather than an instance of the class. It does not take self or cls as an argument.
@@ -316,8 +272,6 @@ class MathUtils:
 
 print(MathUtils.add(5, 3))  # Output: 8
 {{< /highlight >}}
-
-
 
 Special Methods (Magic Methods)
 
@@ -341,31 +295,17 @@ p = Particle(1, 2, 3)
 print(p)  # Output: Particle at (1, 2, 3)
 {{< /highlight >}}
 
-
-
 Conclusion
 
 Object-Oriented Programming (OOP) in Python allows you to:
 
-
-
-
-
 Organize code into classes and objects.
-
-
 
 Reuse code through inheritance.
 
-
-
 Customize behavior with polymorphism.
 
-
-
 Protect data using encapsulation.
-
-
 
 Add flexibility with class and static methods.
 
