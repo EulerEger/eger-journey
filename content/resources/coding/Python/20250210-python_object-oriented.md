@@ -7,15 +7,15 @@ category_weight: 60
 weight: 60
 ---
 
-Introduction
+## Introduction
 
 Python is an object-oriented programming (OOP) language, which means it is designed around the concept of objects. An object is a collection of data (attributes) and methods (functions) that operate on that data. 
 
 In Python, objects are created using classes, which act as blueprints for the objects. OOP allows for modular, reusable, and maintainable code by organizing related data and behavior into classes.
 
-Classes and Objects
+## Classes and Objects
 
-What is a Class?
+### What is a Class?
 
 A class is a blueprint for creating objects. It defines:
 
@@ -23,11 +23,11 @@ Attributes: Variables that store data.
 
 Methods: Functions that perform operations on the data.
 
-What is an Object?
+### What is an Object?
 
 An object is an instance of a class. When you create an object, you are creating a specific instance of the class with its own data.
 
-Defining a Class
+### Defining a Class
 
 To define a class in Python, use the class keyword followed by the class name and parentheses.
 
@@ -47,13 +47,13 @@ class Particle:
         self.m = m    # Mass
 {{< /highlight >}}
 
-Explanation
+### Explanation
 
 **__init__**: A special method called the constructor. It is automatically called when an object is created.
 
 **self**: Refers to the instance of the class. It allows you to access the attributes and methods of the class.
 
-Creating Objects
+### Creating Objects
 
 Once the class is defined, you can create objects (instances) of that class.
 
@@ -66,7 +66,7 @@ p2 = Particle(1, 0, 1, 1, 0, 0, 3)
 print(p1.x, p2.x)  # Output: 3 1
 {{< /highlight >}}
 
-Methods
+## Methods
 
 Methods are functions defined inside a class that perform operations on the object’s data. They can access and modify the object’s attributes using self.
 
@@ -99,7 +99,7 @@ def move(self, t):
 def get_distance(self):
     return math.sqrt(self.x**2 + self.y**2 + self.z**2)
 
-Create a particle and move it
+### Create a particle and move it
 
 p = Particle(3, 0, 1, 1, 0, 0, 3)
 p.move(2)
@@ -107,7 +107,7 @@ print(p.x, p.y, p.z)  # Output: 5 0 1
 print(p.get_distance())  # Output: 5.0990195135927845
 {{< /highlight >}}
 
-Inheritance
+## Inheritance
 
 Inheritance allows a child class to inherit attributes and methods from a parent class. This promotes code reusability and hierarchical organization.
 
@@ -122,7 +122,7 @@ class Proton(Particle):
         self.m = 1.67e-27  # Mass of a proton
         super().init(x, y, z, vx, vy, vz, self.m)
 
-Create a proton
+### Create a proton
 
 p = Proton(0, 0, 1, 1, 0, 0)
 print(p.x)  # Output: 0
@@ -136,7 +136,7 @@ Explanation
 
 **Proton** inherits all attributes and methods from Particle and adds its own (q).
 
-Overriding Methods
+### Overriding Methods
 
 You can override methods in the child class to provide specific behavior.
 
@@ -177,7 +177,7 @@ p.move(t=2, Ex=4e-12, Ey=3e-12, Ez=6e-12)
 print(p.get_position())  # Output: [13.78155873, 8.16684962, 14.17233809]
 {{< /highlight >}}
 
-Polymorphism
+### Polymorphism
 
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables flexibility and dynamic method resolution.
 
@@ -187,7 +187,7 @@ Both Particle and Proton objects can call the move method, but the behavior diff
 
 {{< highlight python >}}
 
-Create a Particle and a Proton
+### Create a Particle and a Proton
 
 particle = Particle(0, 0, 0, 1, 0, 0, 1)
 proton = Proton(0, 0, 0, 1, 0, 0)
@@ -201,11 +201,11 @@ print("Particle position:", particle.x, particle.y, particle.z)
 print("Proton position:", proton.x, proton.y, proton.z)
 {{< /highlight >}}
 
-Encapsulation
+## Encapsulation
 
 Encapsulation is the concept of bundling data (attributes) and methods that operate on the data within a single unit (class). It also involves restricting direct access to some of the object’s components, which is a way of preventing accidental modification of data.
 
-Private Attributes
+### Private Attributes
 
 In Python, you can use name mangling to make attributes private by prefixing them with double underscores (__).
 
@@ -231,9 +231,9 @@ print(account.__balance)  # Error: AttributeError
 
 {{< /highlight >}}
 
-Class Methods and Static Methods
+## Class Methods and Static Methods
 
-Class Methods
+### Class Methods
 
 A class method is a method that is bound to the class rather than its object. It takes the class (cls) as the first argument instead of the instance (self).
 
@@ -258,7 +258,7 @@ p2 = Particle(4, 5, 6)
 print(Particle.get_count())  # Output: 2
 {{< /highlight >}}
 
-Static Methods
+### Static Methods
 
 A static method is a method that belongs to the class rather than an instance of the class. It does not take self or cls as an argument.
 
@@ -273,7 +273,7 @@ class MathUtils:
 print(MathUtils.add(5, 3))  # Output: 8
 {{< /highlight >}}
 
-Special Methods (Magic Methods)
+### Special Methods (Magic Methods)
 
 Python classes can define special methods (also called "magic methods") to customize the behavior of built-in operations like +, -, ==, etc.
 
@@ -295,7 +295,7 @@ p = Particle(1, 2, 3)
 print(p)  # Output: Particle at (1, 2, 3)
 {{< /highlight >}}
 
-Conclusion
+## Conclusion
 
 Object-Oriented Programming (OOP) in Python allows you to:
 
