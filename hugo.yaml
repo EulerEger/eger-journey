@@ -149,12 +149,12 @@ outputs:
     - RSS
     - JSON
 
-  section:
-    - HTML
-    - RSS
+  # section:
+  #   - HTML
+  #   - RSS
 
-  taxonomy:
-    - HTML
+  # taxonomy:
+  #   - HTML
 
 # ============================================================
 # Security
