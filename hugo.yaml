@@ -38,7 +38,7 @@ params:
   ShowCodeCopyButtons: true
 
   # Homepage header
-  # homeInfoParams:
+  homeInfoParams:
     Title: "Scientific Notes & Explorations"
     Content: " A self-hosted science and technology blog dedicated to clear explanations, rigorous reasoning, and long-term maintainability."
 
