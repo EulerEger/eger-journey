@@ -1,0 +1,28 @@
+<form method="POST" action="/contact/submit" class="contact-form">
+  <label for="name">Name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    required
+    placeholder="Your name">
+
+  <label for="email">Email</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    required
+    placeholder="your@email.com">
+
+  <label for="message">Message</label>
+  <textarea
+    id="message"
+    name="message"
+    rows="6"
+    required
+    placeholder="Your message"></textarea>
+
+  <button type="submit">Send message</button>
+</form>
+<p><small>Privacy Notice: Your information will only be used to respond to your message and will not be shared.</small></p>

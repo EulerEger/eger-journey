@@ -1,0 +1,206 @@
+<!doctype html><html lang=en dir=auto data-theme=dark><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="noindex, nofollow"><title>Operators | Eger's Journey</title><meta name=keywords content><meta name=description content="Introduction
+The logic of programming comes from the operators here we will see the built-in python operators that are the building blocks for more complex codes.
+Operators
+The most important functionality is the ability to perform mathematical operations. Python covers the most basic arithmetic operations.
+Arithmetic operator
+
+
+1
+2
+3
+4
+5
+6
+
+
+a = 3
+b =5
+print(a+b)
+print(a*b)
+print(a-b)
+print(a/b)
+
+
+Output:
+
+
+1
+2
+3
+4
+
+
+8
+15
+-2
+0.6
+
+
+Another operator available is the modulo (%) operator, which returns the integer remainder of the division:"><meta name=author content="E-ger"><link rel=canonical href=http://192.168.1.117:1313/resources/coding/python/20250207-python_operators/><link crossorigin=anonymous href=/assets/css/stylesheet.09466b5d56c3151d8ba1fd5e8b7ad00dedebd3116b19fd7c7b4592481d088b1d.css integrity="sha256-CUZrXVbDFR2Lof1ei3rQDe3r0xFrGf18e0WSSB0Iix0=" rel="preload stylesheet" as=style><link rel=icon href=http://192.168.1.117:1313/favicon.ico><link rel=icon type=image/png sizes=16x16 href=http://192.168.1.117:1313/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=http://192.168.1.117:1313/favicon-32x32.png><link rel=apple-touch-icon href=http://192.168.1.117:1313/apple-touch-icon.png><link rel=mask-icon href=http://192.168.1.117:1313/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=http://192.168.1.117:1313/resources/coding/python/20250207-python_operators/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript></head><body id=top><header class=header><nav class=nav><div class=logo><a href=http://192.168.1.117:1313/ accesskey=h title="Eger's Journey (Alt + H)">Eger's Journey</a><div class=logo-switches></div></div><ul id=menu><li><a href=http://192.168.1.117:1313/ title=Home><span>Home</span></a></li><li><a href=http://192.168.1.117:1313/about/ title=About><span>About</span></a></li><li><a href=http://192.168.1.117:1313/posts/ title=Journal><span>Journal</span></a></li><li><a href=http://192.168.1.117:1313/resources/ title=Resources><span>Resources</span></a></li><li><a href=http://192.168.1.117:1313/contact/ title=Contact><span>Contact</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=http://192.168.1.117:1313/>Home</a>&nbsp;»&nbsp;<a href=http://192.168.1.117:1313/resources/>Resources</a>&nbsp;»&nbsp;<a href=http://192.168.1.117:1313/resources/coding/>Programming Resources</a>&nbsp;»&nbsp;<a href=http://192.168.1.117:1313/resources/coding/python/>Python Basics</a></div><h1 class="post-title entry-hint-parent">Operators</h1><div class=post-meta><span title='2026-02-07 00:00:00 +0000 UTC'>February 7, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>E-ger</span></div></header><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><ul><li><a href=#introduction aria-label=Introduction>Introduction</a></li></ul><li><a href=#operators aria-label=Operators>Operators</a><ul><li><a href=#arithmetic-operator aria-label="Arithmetic operator">Arithmetic operator</a></li><li><a href=#comparison-and-logic-operators aria-label="Comparison and logic operators">Comparison and logic operators</a><ul><li><a href=#comparison aria-label=Comparison>Comparison</a></li><li><a href=#logic aria-label=Logic>Logic</a></li><li><a href=#identity aria-label=Identity>Identity</a></li><li><a href=#membership aria-label=Membership>Membership</a></li><li><a href=#list-operation aria-label="List operation">List operation</a></li><li><a href=#string aria-label=String>String</a></li><li><a href=#string-format-f-string--r-string aria-label="String format (f-string / r-string)">String format (f-string / r-string)</a></li></ul></li></ul></li></ul></div></details></div><div class=post-content><h2 id=introduction>Introduction<a hidden class=anchor aria-hidden=true href=#introduction>#</a></h2><p>The logic of programming comes from the operators here we will see the built-in python operators that are the building blocks for more complex codes.</p><h1 id=operators>Operators<a hidden class=anchor aria-hidden=true href=#operators>#</a></h1><p>The most important functionality is the ability to perform mathematical operations. Python covers the most basic arithmetic operations.</p><h2 id=arithmetic-operator>Arithmetic operator<a hidden class=anchor aria-hidden=true href=#arithmetic-operator>#</a></h2><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>a</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl><span class=n>b</span> <span class=o>=</span><span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>a</span><span class=o>+</span><span class=n>b</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>a</span><span class=o>*</span><span class=n>b</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>a</span><span class=o>-</span><span class=n>b</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>a</span><span class=o>/</span><span class=n>b</span><span class=p>)</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>8
+</span></span><span class=line><span class=cl>15
+</span></span><span class=line><span class=cl>-2
+</span></span><span class=line><span class=cl>0.6</span></span></code></pre></td></tr></table></div></div>Another operator available is the modulo (%) operator, which returns the integer remainder of the division:</p><ul><li>a / b = c</li><li>a - b*c = d</li></ul><p>a % b = d</p><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>a</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl><span class=n>b</span> <span class=o>=</span><span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=o>%</span><span class=n>b</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>3</span></span></code></pre></td></tr></table></div></div></p><p>Using two multiplication symbols makes a power relationship.</p><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>a</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl><span class=n>b</span> <span class=o>=</span><span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=n>a</span><span class=o>**</span><span class=n>b</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>243</span></span></code></pre></td></tr></table></div></div></p><h2 id=comparison-and-logic-operators>Comparison and logic operators<a hidden class=anchor aria-hidden=true href=#comparison-and-logic-operators>#</a></h2><p>In order to work with iterable there is the need to look a specific value, the comparison operator help with it, they return Booleans (True or False).</p><table><thead><tr><th>Operator</th><th>Name</th></tr></thead><tbody><tr><td>==</td><td>Equal</td></tr><tr><td>!=</td><td>Not equal</td></tr><tr><td>></td><td>Greater than</td></tr><tr><td>&lt;</td><td>Less than x &lt; y</td></tr><tr><td>>=</td><td>Greater than or equal to</td></tr><tr><td>&lt;=</td><td>Less than or equal to</td></tr><tr><td>and</td><td>Returns True if both statements are true</td></tr><tr><td>or</td><td>Returns True if one of the statements is true</td></tr><tr><td>not</td><td>Reverse the result, returns False if the result is true</td></tr><tr><td>is</td><td>Returns True if both variables are the same object</td></tr><tr><td>is not</td><td>Returns True if both variables are not the same object</td></tr><tr><td>in</td><td>Returns True if a sequence with the specified value is present in the object</td></tr><tr><td>not in</td><td>Returns True if a sequence with the specified value is not present in the object</td></tr></tbody></table><h3 id=comparison>Comparison<a hidden class=anchor aria-hidden=true href=#comparison>#</a></h3><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=n>y</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>==</span> <span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>!=</span> <span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>&gt;</span> <span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>&lt;</span> <span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>&gt;=</span> <span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>&lt;=</span> <span class=n>y</span><span class=p>)</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>False
+</span></span><span class=line><span class=cl>True
+</span></span><span class=line><span class=cl>True
+</span></span><span class=line><span class=cl>False
+</span></span><span class=line><span class=cl>True
+</span></span><span class=line><span class=cl>False</span></span></code></pre></td></tr></table></div></div></p><h3 id=logic>Logic<a hidden class=anchor aria-hidden=true href=#logic>#</a></h3><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=n>y</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>&gt;</span> <span class=mi>0</span> <span class=ow>and</span> <span class=n>x</span> <span class=o>&lt;</span> <span class=mi>10</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>&lt;</span> <span class=mi>5</span> <span class=ow>or</span> <span class=n>x</span> <span class=o>&gt;</span> <span class=mi>10</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=ow>not</span><span class=p>(</span><span class=n>x</span> <span class=o>&gt;</span> <span class=mi>3</span> <span class=ow>and</span> <span class=n>x</span> <span class=o>&lt;</span> <span class=mi>10</span><span class=p>))</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>True
+</span></span><span class=line><span class=cl>False
+</span></span><span class=line><span class=cl>False</span></span></code></pre></td></tr></table></div></div></p><h3 id=identity>Identity<a hidden class=anchor aria-hidden=true href=#identity>#</a></h3><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=n>y</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>&gt;</span> <span class=mi>0</span> <span class=ow>and</span> <span class=n>x</span> <span class=o>&lt;</span> <span class=mi>10</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>&lt;</span> <span class=mi>5</span> <span class=ow>or</span> <span class=n>x</span> <span class=o>&gt;</span> <span class=mi>10</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=ow>not</span><span class=p>(</span><span class=n>x</span> <span class=o>&gt;</span> <span class=mi>3</span> <span class=ow>and</span> <span class=n>x</span> <span class=o>&lt;</span> <span class=mi>10</span><span class=p>))</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>True
+</span></span><span class=line><span class=cl>False
+</span></span><span class=line><span class=cl>False</span></span></code></pre></td></tr></table></div></div></p><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=p>[</span><span class=s2>&#34;apple&#34;</span><span class=p>,</span> <span class=s2>&#34;banana&#34;</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=n>y</span> <span class=o>=</span> <span class=p>[</span><span class=s2>&#34;apple&#34;</span><span class=p>,</span> <span class=s2>&#34;banana&#34;</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=n>z</span> <span class=o>=</span> <span class=n>x</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=ow>is</span> <span class=n>z</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=ow>is</span> <span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=o>==</span> <span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span> <span class=ow>is</span> <span class=ow>not</span> <span class=n>y</span><span class=p>)</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>True
+</span></span><span class=line><span class=cl>False
+</span></span><span class=line><span class=cl>True
+</span></span><span class=line><span class=cl>True</span></span></code></pre></td></tr></table></div></div></p><ul><li><em>is</em> - Checks if both variables point to the same object in memory</li><li>== - Checks if the values of both variables are equal</li></ul><h3 id=membership>Membership<a hidden class=anchor aria-hidden=true href=#membership>#</a></h3><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>fruits</span> <span class=o>=</span> <span class=p>[</span><span class=s2>&#34;apple&#34;</span><span class=p>,</span> <span class=s2>&#34;banana&#34;</span><span class=p>,</span> <span class=s2>&#34;cherry&#34;</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;banana&#34;</span> <span class=ow>in</span> <span class=n>fruits</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;pineapple&#34;</span> <span class=ow>not</span> <span class=ow>in</span> <span class=n>fruits</span><span class=p>)</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>True
+</span></span><span class=line><span class=cl>True</span></span></code></pre></td></tr></table></div></div></p><h3 id=list-operation>List operation<a hidden class=anchor aria-hidden=true href=#list-operation>#</a></h3><p>the operators do not work in the same way in list, for example:</p><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>a</span> <span class=o>=</span> <span class=p>[</span><span class=mi>5</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>8</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=n>b</span> <span class=o>=</span> <span class=p>[</span><span class=mi>6</span><span class=p>,</span> <span class=mi>9</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>a</span><span class=o>+</span><span class=n>b</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=mi>4</span><span class=o>*</span><span class=n>a</span><span class=p>)</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>[5, 3, 2, 8, 6, 9, 2, 3]
+</span></span><span class=line><span class=cl>[5, 3, 2, 8, 5, 3, 2, 8, 5, 3, 2, 8, 5, 3, 2, 8,]</span></span></code></pre></td></tr></table></div></div></p><h3 id=string>String<a hidden class=anchor aria-hidden=true href=#string>#</a></h3><p>The strings are naturally lists, because they are a list of characters, the list operation will work in the same way as it does for the list.</p><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>a</span> <span class=o>=</span> <span class=s2>&#34;hello&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>b</span> <span class=o>=</span> <span class=s2>&#34;World&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>a</span> <span class=o>+</span> <span class=s2>&#34; &#34;</span> <span class=o>+</span> <span class=n>b</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=mi>4</span><span class=o>*</span><span class=n>a</span><span class=p>)</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>hello world
+</span></span><span class=line><span class=cl>hellohellohellohellohello</span></span></code></pre></td></tr></table></div></div></p><p>It is important to notice that the operation must be realized with the same data type. It will not work if you try to add a boolean with a float, although it will work between float and integer.</p><h3 id=string-format-f-string--r-string>String format (f-string / r-string)<a hidden class=anchor aria-hidden=true href=#string-format-f-string--r-string>#</a></h3><p>The strings have two types of format structure: the raw strings (r-string) are strings that does not admit the modifiers, the backslash is treated as literal character; the formatted strings (f-string) allow embedded expressions directly inside literals using braces or argument specifiers.</p><p>%s - String (or any object with a string representation, like numbers)</p><p>%d - Integers</p><p>%f - Floating point numbers</p><p>%.&ldquo;number of digits"f - Floating point numbers with a fixed amount of digits to the right of the dot.</p><p>%x/%X - Integers in hex representation (lowercase/uppercase)</p><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>name</span> <span class=o>=</span> <span class=s2>&#34;John&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>age</span> <span class=o>=</span> <span class=mi>23</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=sa>f</span><span class=s2>&#34;%s is %d years old.&#34;</span> <span class=o>%</span> <span class=p>(</span><span class=n>name</span><span class=p>,</span> <span class=n>age</span><span class=p>))</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>John is 23 years old. </span></span></code></pre></td></tr></table></div></div></p><p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;C:</span><span class=se>\n</span><span class=s2>ew</span><span class=se>\t</span><span class=s2>est&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=sa>r</span><span class=s2>&#34;C:\new\test&#34;</span><span class=p>)</span></span></span></code></pre></td></tr></table></div></div><strong>Output:</strong><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>C:
+</span></span><span class=line><span class=cl>ew	est
+</span></span><span class=line><span class=cl>C:\new\test</span></span></code></pre></td></tr></table></div></div></p><script>(function(){fetch("/pageview",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({path:'"/resources/coding/python/20250207-python_operators/"'})}).catch(console.error)})()</script></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=http://192.168.1.117:1313/resources/coding/python/20250206-python_data-structure/><span class=title>« Prev</span><br><span>Data structure</span>
+</a><a class=next href=http://192.168.1.117:1313/resources/coding/python/20250208-python_loops-conditions/><span class=title>Next »</span><br><span>Loops and Conditionals</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2026 <a href=http://192.168.1.117:1313/>Eger's Journey</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span><br><span><a href=/disclaimer/>Disclaimer</a> ·
+<a href=/privacy/>Privacy Policy</a> ·
+<a href=/security/>Security Policy</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

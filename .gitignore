@@ -1,0 +1,11 @@
+# Hugo generated folders
+/public/
+/resources/
+/node_modules/
+/draft/
+# OS files
+.DS_Store
+*.log
+
+public/
+.hugo_build.lock

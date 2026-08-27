@@ -1,0 +1,26 @@
+.contact-form {
+  max-width: 640px;
+  margin: 2rem 0;
+}
+
+.contact-form label {
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}

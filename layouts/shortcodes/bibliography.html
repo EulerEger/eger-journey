@@ -1,0 +1,18 @@
+{{ $refs := .Page.Resources.GetMatch "data/reference.yml" | transform.Unmarshal }}
+{{ $cited := .Page.Scratch.Get "cited" }}
+
+{{ if $cited }}
+## References
+
+{{ range $refs }}
+  {{ if in $cited .id }}
+    <p>
+      {{ index .author 0 "family" }}, {{ index .author 0 "given" }} ({{ index .issued "year" }}).
+      <i>{{ .title }}</i>.
+      {{ with .publisher }}{{ . }}.{{ end }}
+      {{ with index . "container-title" }}{{ . }}.{{ end }}
+    </p>
+  {{ end }}
+{{ end }}
+
+{{ end }}

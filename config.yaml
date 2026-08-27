@@ -1,0 +1,178 @@
+# ============================================================
+# Core Site Configuration
+# ============================================================
+
+baseURL: "https://eger-blog.duckdns.org/"
+title: "Eger's Journey"
+theme: "PaperMod"
+languageCode: "en-us"
+
+enableRobotsTXT: true
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# ============================================================
+# Pagination (Hugo v0.154+)
+# ============================================================
+
+pagination:
+  pagerSize: 10
+  path: page
+
+# ============================================================
+# Site Parameters
+# ============================================================
+
+params:
+  author: "E-ger"
+  description: "The journey of a curious mind eager to better understand the inner workings of the universe."
+
+  ShowReadingTime: true
+  ShowToc: true
+  TocOpen: true
+
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+
+  # Homepage header
+  # homeInfoParams:
+  #   Title: "Scientific Notes & Explorations"
+  #   Content: " A self-hosted science and technology blog dedicated to clear explanations, rigorous reasoning, and long-term maintainability."
+
+  # Mathematics (KaTeX)
+  math: true
+  
+  # citation
+  citation:
+    style: apa
+  
+  # Analytics (shortcode-driven, privacy-friendly)
+  analytics:
+    enable: true
+
+  defaultTheme: dark         # auto / light / dark
+  disableThemeToggle: true  # must be false to allow toggle
+
+
+# ============================================================
+# Menu Configuration
+# ============================================================
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+
+    - identifier: posts
+      name: Journal
+      url: /posts/
+      weight: 30
+
+    - identifier: resources
+      name: Resources
+      url: /resources/
+      weight: 40
+
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+
+# ============================================================
+# Taxonomies
+# ============================================================
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series  # optional for research grouping
+
+# ============================================================
+# Markup & Rendering
+# ============================================================
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false   # shortcode-only policy
+
+  highlight:
+    noClasses: false
+    style: monokai
+    lineNos: true
+
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+
+  math:
+    enable: true
+
+# ============================================================
+# Privacy / Tracking Protection (Hugo v0.154)
+# ============================================================
+
+privacy:
+  googleAnalytics:
+    disable: true
+
+  youtube:
+    privacyEnhanced: true
+
+  vimeo:
+    enableDNT: true
+
+  x:
+    twitter:
+      disable: true
+    instagram:
+      disable: true
+
+# ============================================================
+# Output Formats
+# ============================================================
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+  section:
+    - HTML
+    - RSS
+
+  taxonomy:
+    - HTML
+
+# ============================================================
+# Security
+# ============================================================
+
+security:
+  enableInlineShortcodes: true  # allow shortcodes, raw HTML disabled
+
+# ============================================================
+# Build / Performance
+# ============================================================
+
+build:
+  writeStats: true
+  useResourceCacheWhen: fallback
+
+minify:
+  disableHTML: false
+  disableCSS: false
+  disableJS: false
+  minifyOutput: true

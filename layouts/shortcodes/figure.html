@@ -1,0 +1,17 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" | default "" }}
+
+{{ $imgs := .Page.Resources.Match $src }}
+{{ if lt (len $imgs) 1 }}
+  {{ errorf "Figure shortcode: resource '%s' not found in page bundle." $src }}
+{{ end }}
+
+{{ $img := index $imgs 0 }}
+
+<figure>
+  <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" style="max-width:100%;height:auto;" />
+  {{ if $caption }}
+    <figcaption>{{ $caption }}</figcaption>
+  {{ end }}
+</figure>

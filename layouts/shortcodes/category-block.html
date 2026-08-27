@@ -1,0 +1,41 @@
+{{- $cat := .Get "category" -}}
+{{- if not $cat -}}
+  {{ errorf "category-block shortcode requires a category parameter" }}
+{{- end -}}
+
+{{- $key := lower $cat -}}
+{{- $taxonomy := index .Site.Taxonomies.categories $key -}}
+
+<section class="category-block">
+  <h2>{{ $cat }}</h2>
+
+  {{- if $taxonomy }}
+
+    {{- $pages := $taxonomy.Pages -}}
+
+    {{- /* Sort first by category_weight (ascending) */ -}}
+    {{- $sorted := sort $pages "Params.category_weight" "asc" -}}
+
+    {{- /* Then sort by Date (descending) within same weight */ -}}
+    {{- $sorted = sort $sorted "Date" "desc" -}}
+
+    <ul>
+      {{- range $sorted -}}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+          <span class="meta">
+            — {{ .Date.Format "2006-01-02" }}
+          </span>
+        </li>
+      {{- end -}}
+    </ul>
+
+  {{- else }}
+
+    <p>No posts available in this category.</p>
+
+  {{- end }}
+
+</section>

@@ -1,0 +1,8 @@
+{{ $file := .Page.Resources.GetMatch (.Get "src") }}
+{{ if $file }}
+<p>
+  <a href="{{ $file.RelPermalink }}" download>
+    Download {{ .Get "label" }}
+  </a>
+</p>
+{{ end }}

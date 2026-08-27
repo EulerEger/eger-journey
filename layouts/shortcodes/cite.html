@@ -1,0 +1,11 @@
+{{ $refs := .Page.Resources.GetMatch "data/reference.yml" | transform.Unmarshal }}
+{{ $id := .Get "id" }}
+
+{{/* Store cited id */}}
+{{ .Page.Scratch.Add "cited" (slice $id) }}
+
+{{ range $refs }}
+  {{ if eq .id $id }}
+    ({{ index .author 0 "family" }}, {{ .issued.year }})
+  {{ end }}
+{{ end }}

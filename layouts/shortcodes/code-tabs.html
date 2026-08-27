@@ -1,0 +1,35 @@
+{{- $group := .Get "group" | default "default" -}}
+{{- $files := .Get "files" -}}
+{{- if not $files -}}
+  {{ errorf "code-tabs shortcode requires a 'files' parameter" }}
+{{- end -}}
+
+{{- $fileList := split $files "," -}}
+
+<div class="code-tabs" data-group="{{ $group }}">
+  <div class="tab-buttons">
+    {{- range $i, $file := $fileList }}
+      {{- $trimmed := trim $file " " -}}
+      {{- $lang := replace (path.Ext $trimmed) "." "" -}}
+      <button class="tab-button {{ if eq $i 0 }}active{{ end }}"
+              data-tab="{{ $group }}-{{ $i }}">
+        {{ upper $lang }}
+      </button>
+    {{- end }}
+  </div>
+
+  {{- range $i, $file := $fileList }}
+    {{- $trimmed := trim $file " " -}}
+    {{- $resource := $.Page.Resources.GetMatch $trimmed -}}
+    {{- if not $resource }}
+      {{ errorf "File %s not found in leaf bundle" $trimmed }}
+    {{- end }}
+
+    <div class="tab-content {{ if eq $i 0 }}active{{ end }}"
+         id="{{ $group }}-{{ $i }}">
+      <pre><code class="language-{{ replace (path.Ext $trimmed) "." "" }}">
+{{ $resource.Content | safeHTML }}
+      </code></pre>
+    </div>
+  {{- end }}
+</div>

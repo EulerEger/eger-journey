@@ -1,0 +1,15 @@
+{{/* 
+Shortcode: category-list
+Lists all categories with links to their landing pages
+Usage: {{< category-list >}}
+*/}}
+
+<section class="category-list">
+  {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <div class="category-item">
+      <a href="{{ $.Site.BaseURL }}{{ if eq .Page.Section "posts" }}posts{{ else }}resources{{ end }}/{{ $name | urlize }}/">
+        {{ $name }} ({{ len $taxonomy }})
+      </a>
+    </div>
+  {{ end }}
+</section>
