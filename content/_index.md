@@ -11,11 +11,11 @@ This site is intentionally **self-hosted on low-power hardware** and built entir
 
 ## Topics Covered
 
-- Applied physiscs and mathematics
+- Applied physics and mathematics
 - Nuclear process
 - Chemical process 
 - Thermodynamics
-- Fluids mechanics
+- Fluid mechanics
 - Reaction kinetics
 - Heat and mass transfer
 
@@ -33,6 +33,3 @@ Articles are written to:
 If you are a student, researcher, engineer, or curious reader, this blog is written for you.
 
 ---
-## Latest Articles
-
-{{< pageview >}}
