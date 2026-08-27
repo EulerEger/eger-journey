@@ -1,1 +1,0 @@
-{"rule":"DT_JJ_NO_NOUN","sentence":"^\\QTo declare a global is just to {{< pageview >}}\\E$"}
