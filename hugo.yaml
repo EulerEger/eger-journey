@@ -4,61 +4,65 @@
 
 baseURL: "https://eger-journey.github.io/"
 title: "Eger's Journey"
-theme: "PaperMod"
+
 languageCode: "en-us"
+title: "repo-name"
+theme: "PaperMod"
 
 enableRobotsTXT: true
 
+# Production builds only
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+
 # ============================================================
-# Pagination (Hugo v0.154+)
+# Pagination
 # ============================================================
 
 pagination:
   pagerSize: 10
-  path: page
+  path: "page"
+
 
 # ============================================================
-# Site Parameters
+# PaperMod
 # ============================================================
 
 params:
-  author: "E-ger"
+  env: "production"
+
+  author: "E-GER"
   description: "The journey of a curious mind eager to better understand the inner workings of the universe."
 
+  # Appearance
+  defaultTheme: "auto"
+  disableThemeToggle: false
+
+  # Posts
   ShowReadingTime: true
   ShowToc: true
   TocOpen: true
-
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
 
-  # Homepage header
+  # Homepage
   homeInfoParams:
     Title: "Scientific Notes & Explorations"
-    Content: " A self-hosted science and technology blog dedicated to clear explanations, rigorous reasoning, and long-term maintainability."
+    Content: "A self-hosted science and technology blog dedicated to clear explanations, rigorous reasoning, and long-term maintainability."
 
-  # Mathematics (KaTeX)
+  # Mathematics
   math: true
-  
-  # citation
-  citation:
-    style: apa
-  
-  # Analytics (shortcode-driven, privacy-friendly)
-  analytics:
-    enable: true
 
-  defaultTheme: auto         # auto/light/dark
-  disableThemeToggle: false  # must be false to allow toggle
+  # Citation
+  citation:
+    style: "apa"
 
 
 # ============================================================
-# Menu Configuration
+# Navigation
 # ============================================================
 
 menu:
@@ -88,6 +92,12 @@ menu:
       url: /contact/
       weight: 50
 
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 60
+
+
 # ============================================================
 # Taxonomies
 # ============================================================
@@ -95,7 +105,8 @@ menu:
 taxonomies:
   category: categories
   tag: tags
-  series: series  # optional for research grouping
+  series: series
+
 
 # ============================================================
 # Markup & Rendering
@@ -104,11 +115,11 @@ taxonomies:
 markup:
   goldmark:
     renderer:
-      unsafe: false   # shortcode-only policy
+      unsafe: false
 
   highlight:
     noClasses: false
-    style: monokai
+    style: "monokai"
     lineNos: true
 
   tableOfContents:
@@ -116,11 +127,9 @@ markup:
     endLevel: 4
     ordered: false
 
-  math:
-    enable: true
 
 # ============================================================
-# Privacy / Tracking Protection (Hugo v0.154)
+# Privacy / Tracking Protection
 # ============================================================
 
 privacy:
@@ -134,10 +143,8 @@ privacy:
     enableDNT: true
 
   x:
-    twitter:
-      disable: true
-    instagram:
-      disable: true
+    disable: true
+
 
 # ============================================================
 # Output Formats
@@ -156,12 +163,14 @@ outputs:
   taxonomy:
     - HTML
 
+
 # ============================================================
 # Security
 # ============================================================
 
 security:
-  enableInlineShortcodes: true  # allow shortcodes, raw HTML disabled
+  enableInlineShortcodes: true
+
 
 # ============================================================
 # Build / Performance
@@ -170,6 +179,11 @@ security:
 build:
   writeStats: true
   useResourceCacheWhen: fallback
+
+
+# ============================================================
+# Minification
+# ============================================================
 
 minify:
   disableHTML: false
