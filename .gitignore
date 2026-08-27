@@ -9,7 +9,7 @@
 .DS_Store
 *.log
 Thumbs.db
-
+hugo_stats.json
 .hugo_build.lock
 
 # Hugo backups and temporary files
