@@ -1,7 +1,7 @@
 ---
 title: 'Data Types in C++'
 date: 2026-02-12
-draft: false
+draft: true
 categories: ["Coding", "Cpp"]
 description: 'Explore the fundamental data types in C++, their sizes, ranges, and practical usage with examples.'
 weight: 30

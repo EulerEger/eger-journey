@@ -1,7 +1,7 @@
 ---
 title: 'Data types'
 date: '2026-02-12'
-draft: false
+draft: true
 categories: ["Coding", "Cpp"]
 category_weight: 10
 weight: 10

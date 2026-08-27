@@ -1,7 +1,7 @@
 ---
 title: 'Data structure'
 date: '2026-02-13'
-draft: false
+draft: true
 categories: ["Coding", "Cpp"]
 category_weight: 20
 weight: 20
