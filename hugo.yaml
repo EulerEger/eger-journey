@@ -39,8 +39,8 @@ params:
 
   # Homepage header
   # homeInfoParams:
-  #   Title: "Scientific Notes & Explorations"
-  #   Content: " A self-hosted science and technology blog dedicated to clear explanations, rigorous reasoning, and long-term maintainability."
+    Title: "Scientific Notes & Explorations"
+    Content: " A self-hosted science and technology blog dedicated to clear explanations, rigorous reasoning, and long-term maintainability."
 
   # Mathematics (KaTeX)
   math: true
@@ -53,8 +53,8 @@ params:
   analytics:
     enable: true
 
-  defaultTheme: dark         # auto / light / dark
-  disableThemeToggle: true  # must be false to allow toggle
+  defaultTheme: auto         # auto/light/dark
+  disableThemeToggle: false  # must be false to allow toggle
 
 
 # ============================================================
@@ -149,12 +149,12 @@ outputs:
     - RSS
     - JSON
 
-  # section:
-  #   - HTML
-  #   - RSS
+  section:
+    - HTML
+    - RSS
 
-  # taxonomy:
-  #   - HTML
+  taxonomy:
+    - HTML
 
 # ============================================================
 # Security
