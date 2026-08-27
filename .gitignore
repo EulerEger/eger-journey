@@ -1,4 +1,4 @@
-# Hugo generated folders
+# Hugo-generated folders
 /public/
 /resources/
 /node_modules/
@@ -18,15 +18,5 @@ hugo_stats.json
 *.swp
 *~
 
-# Docker logs
-*.log
-
-
 # Editors / IDEs
 .vscode/
-.idea/
-
-# Environment files / secrets
-.env
-.env.*
-!.env.example
