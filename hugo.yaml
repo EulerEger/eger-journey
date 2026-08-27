@@ -3,10 +3,8 @@
 # ============================================================
 
 baseURL: "https://eger-journey.github.io/"
-title: "Eger's Journey"
-
 languageCode: "en-us"
-title: "repo-name"
+title: "Eger's Journey"
 theme: "PaperMod"
 
 enableRobotsTXT: true
