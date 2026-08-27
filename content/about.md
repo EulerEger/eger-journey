@@ -5,9 +5,9 @@ description: "Author background, research interests, and writing philosophy."
 
 ## Author
 
-I am a science enthusiast with a strong interest in **chemistry**, **physics**, **nuclear** and **technical education**.
+I am a science enthusiast with a strong interest in **chemistry**, **physics**, **nuclear**, and **technical education**.
 
-My background is rooted in practical experimentation, numerical simulations, thermodynamics and fluid dynamics calculations, as well as chemical and some nuclear processes.
+My background is rooted in practical experimentation, numerical simulations, thermodynamics, and fluid dynamics, as well as chemical and some nuclear processes.
 
 ---
 
