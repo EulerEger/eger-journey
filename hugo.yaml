@@ -46,10 +46,10 @@ params:
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
 
-  # Homepage
-  homeInfoParams:
-    Title: "Scientific Notes & Explorations"
-    Content: "A self-hosted science and technology blog dedicated to clear explanations, rigorous reasoning, and long-term maintainability."
+  # # Homepage
+  # homeInfoParams:
+  #   Title: "Scientific Notes & Explorations"
+  #   Content: "A self-hosted science and technology blog dedicated to clear explanations, rigorous reasoning, and long-term maintainability."
 
   # Mathematics
   math: true
