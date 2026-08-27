@@ -28,11 +28,12 @@ In Python, you define a function using the `def` keyword, followed by:
 
 ### Syntax
 
-```python
+{{< highlight python >}} 
 def function_name(parameter1, parameter2, ...):
     # Code to execute
     return result  # Optional
-```
+{{< /highlight >}}
+
 
 ### Example: Simple Function
 
