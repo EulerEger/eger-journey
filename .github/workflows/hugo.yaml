@@ -1,5 +1,3 @@
-Put this inside it:
-
 name: Deploy Hugo site to GitHub Pages
 
 on:
