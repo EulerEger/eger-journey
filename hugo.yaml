@@ -2,7 +2,7 @@
 # Core Site Configuration
 # ============================================================
 
-baseURL: "https://EulerEger.github.io/eger-journey/"
+baseURL: "https://eger-journey.github.io/"
 title: "Eger's Journey"
 theme: "PaperMod"
 languageCode: "en-us"
