@@ -2,7 +2,7 @@
 # Core Site Configuration
 # ============================================================
 
-baseURL: "https://eger-blog.duckdns.org/"
+baseURL: "https://EulerEger.github.io/eger-journey/"
 title: "Eger's Journey"
 theme: "PaperMod"
 languageCode: "en-us"
